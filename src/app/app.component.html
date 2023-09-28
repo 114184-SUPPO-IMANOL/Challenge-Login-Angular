@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-login *ngIf="!visualizarMenu()" (email)="onEmail($event)"></app-login>
+      <app-principal *ngIf="visualizarMenu()" [email]="email"></app-principal>
+    </div>
+  </div>
+</div>
